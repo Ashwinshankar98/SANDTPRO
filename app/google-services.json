@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "454464183095",
+    "firebase_url": "https://southernrailwayapp.firebaseio.com",
+    "project_id": "southernrailwayapp",
+    "storage_bucket": "southernrailwayapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454464183095:android:2f7a5ab19f8c2a11",
+        "android_client_info": {
+          "package_name": "com.example.priyanka2005.railwayapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454464183095-1jprkt4aim219unnjpmirh1mf13nk9r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.priyanka2005.railwayapp",
+            "certificate_hash": "d6b219971d48330895e4b796743d343937ab6265"
+          }
+        },
+        {
+          "client_id": "454464183095-bjmvbfapn46unpia90pf2vvsvq7k5lgq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454464183095-bjmvbfapn46unpia90pf2vvsvq7k5lgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFoy4xpigrrPgrvqg4AHrGND6IrPpLJ0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454464183095-bjmvbfapn46unpia90pf2vvsvq7k5lgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
