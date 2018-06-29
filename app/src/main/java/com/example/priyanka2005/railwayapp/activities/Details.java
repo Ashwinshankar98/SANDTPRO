@@ -20,7 +20,7 @@ public class Details extends AppCompatActivity {
         Integer IMAGE = getIntent().getIntExtra("image", 1/*Default Value of Int*/);
 
         ImageView img = (ImageView)findViewById(R.id.images);
-        img.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        img.setScaleType(ImageView.ScaleType.FIT_CENTER);
         img.setImageResource(IMAGE);
     }
 }

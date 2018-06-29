@@ -84,7 +84,7 @@ public class GalleryActivity extends AppCompatActivity {
                 Holder = (ViewHolder)convertView.getTag();
             }
             Holder.IMAGE.setImageResource(Image[position]);
-            Holder.IMAGE.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+            Holder.IMAGE.setScaleType(ImageView.ScaleType.FIT_CENTER);
 
             return convertView;
         }
