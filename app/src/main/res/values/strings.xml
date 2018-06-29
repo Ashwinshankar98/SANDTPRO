@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RailwayApp</string>
+    <string name="app_name">STSR</string>
     <string name="title_activity_login">Login</string>
 
     <!-- Strings related to login -->
@@ -20,6 +20,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="title_activity_live_fragment1">LiveFragment1</string>
     <string name="tab_text_1">Pending Failures</string>
     <string name="tab_text_2">Recent Failures</string>

@@ -30,8 +30,8 @@ public class MUX2 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.tele_mux_2,container,false );
-        progressBar = (ProgressBar)view.findViewById( R.id.pmux2);
-        pdfView= (PDFView) view.findViewById(R.id.pmux2);
+        progressBar = (ProgressBar)view.findViewById( R.id.progressBar);
+        pdfView= (PDFView) view.findViewById(R.id.mux2);
         new RetrieverClass().execute(new Constants().url_tele_pm2);
         return view;
     } private class RetrieverClass extends AsyncTask<String,Void,InputStream> {
