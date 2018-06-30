@@ -22,7 +22,7 @@ public class InfraFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.inside_tc_infrastructure,container,false );
         pdfView= (PDFView) view.findViewById(R.id.infra);
-        pdfView.fromAsset("tc_infra.pdf");
+        pdfView.fromAsset("tc_infra.pdf").load();
         return view;
     }
 }

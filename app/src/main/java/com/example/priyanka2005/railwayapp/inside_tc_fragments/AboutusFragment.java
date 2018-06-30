@@ -20,7 +20,7 @@ public class AboutusFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.inside_tc_aboutus,container,false );
         pdfView= (PDFView) view.findViewById(R.id.abts);
-        pdfView.fromAsset("tc_abts.pdf");
+        pdfView.fromAsset("tc_abts.pdf").load();
         return view;
     }
 }

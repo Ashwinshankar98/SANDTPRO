@@ -12,7 +12,8 @@ import com.example.priyanka2005.railwayapp.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class FacultyFragment extends Fragment {
-    private PDFView pdfView; public FacultyFragment() {
+    private PDFView pdfView;
+    public FacultyFragment() {
     }
 
     @Nullable
@@ -20,7 +21,7 @@ public class FacultyFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.inside_tc_faculty,container,false );
         pdfView= (PDFView) view.findViewById(R.id.fac);
-        pdfView.fromAsset("tc_faculty.pdf");
+        pdfView.fromAsset("tc_faculty.pdf").load();
         return view;
     }
 }

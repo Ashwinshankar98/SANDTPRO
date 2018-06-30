@@ -20,7 +20,7 @@ public class HistoryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.inside_tc_history,container,false );
         pdfView= (PDFView) view.findViewById(R.id.history);
-        pdfView.fromAsset("tc_history.pdf");
+        pdfView.fromAsset("tc_history.pdf").load();
         return view;
     }
 }
