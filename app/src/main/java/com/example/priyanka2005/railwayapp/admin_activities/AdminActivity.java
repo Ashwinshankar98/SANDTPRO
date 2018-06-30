@@ -1,6 +1,7 @@
 package com.example.priyanka2005.railwayapp.admin_activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -28,7 +29,9 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
         upload = (CardView)findViewById( R.id.uploadCardView );
         upload.setOnClickListener( this );
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = (Toolbar)findViewById(R.id.toolbar2);
+        toolbar.setTitle( "Admin" );
+        toolbar.setTitleTextColor( Color.WHITE );
         setSupportActionBar(toolbar);
     }
 

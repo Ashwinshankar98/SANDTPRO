@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,8 +22,10 @@ public class TraineePortalRegisterActivity extends AppCompatActivity {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDisplayZoomControls( true );
-        myWebView.loadUrl("https://learn1-5cc0d.firebaseapp.com/index.html");
+        webSettings.setBuiltInZoomControls( true );
+        myWebView.loadUrl("https://southernrailwayapp.firebaseapp.com/");
         myWebView.setWebViewClient(new WebViewClient());
+        myWebView.setWebChromeClient( new WebChromeClient() );
 
     }
 
