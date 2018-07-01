@@ -1,7 +1,10 @@
 package com.example.priyanka2005.railwayapp.admin_activities;
 
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -65,7 +68,22 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         switch (view.getId()){
             case R.id.secdbCardView:
-                startActivity( new Intent( getApplicationContext(),AdminRetrieval.class ) );
+               // startActivity( new Intent( getApplicationContext(),AdminRetrieval.class ) );
+                String url = "https://southernrailwayapp.firebaseapp.com/";
+                try {
+                    Intent i = new Intent("android.intent.action.MAIN");
+                    i.setComponent( ComponentName.unflattenFromString("com.android.chrome/com.android.chrome.Main"));
+                    i.addCategory("android.intent.category.LAUNCHER");
+                    i.setData( Uri.parse(url));
+                    startActivity(i);
+                }
+                catch(ActivityNotFoundException e) {
+                    // Chrome is not installed
+                    Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(i);
+                }
+
+
                 break;
             case R.id.uploadCardView:
                 startActivity( new Intent( getApplicationContext(),UploadActivity.class ) );

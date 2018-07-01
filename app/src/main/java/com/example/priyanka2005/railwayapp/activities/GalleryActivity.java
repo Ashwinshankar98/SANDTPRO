@@ -63,7 +63,7 @@ public class GalleryActivity extends AppCompatActivity {
         private int resource;
         private LayoutInflater inflater;
 
-        public GRIDAdapter(Context context, int resource, Integer[] image) {
+         GRIDAdapter(Context context, int resource, Integer[] image) {
             super(context, resource, image);
             Image = image;
             this.resource = resource;

@@ -1,7 +1,6 @@
 package com.example.priyanka2005.railwayapp.activities;
 
-import android.content.Intent;
-import android.net.Uri;
+
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
@@ -10,9 +9,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -26,13 +24,12 @@ import com.example.priyanka2005.railwayapp.fragments_nav.NtesFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.SignalFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TcFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TelecomFragment;
-import com.google.firebase.auth.FirebaseAuth;
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
     private CollapsingToolbarLayout collapsingToolbarLayout;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +38,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
         collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById( R.id.toolbar );
+        setSupportActionBar( toolbar );
 
-        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout, toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -106,12 +103,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "About Us", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_send:
-                Intent shareIntent =new Intent(android.content.Intent.ACTION_SEND);
-                shareIntent.setType("*/*");
-                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                Uri uri =Uri.parse("/data/apps/"+getApplicationContext().getPackageName()+".apk");
-                shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
-                startActivity(Intent.createChooser(shareIntent,"Share via"));
+//                Intent shareIntent =new Intent(android.content.Intent.ACTION_SEND);
+////                shareIntent.setType("*/*");
+////                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+////                Uri uri =Uri.parse("/data/apps/"+getApplicationContext().getPackageName()+".apk");
+////                shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+////                startActivity(Intent.createChooser(shareIntent,"Share via"));
+////                break;
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
