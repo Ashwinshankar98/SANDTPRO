@@ -43,10 +43,11 @@
         <activity android:name=".inside_ntes_actvitites.TsActivity" />
         <activity android:name=".inside_ntes_actvitites.FenqActivity" />
         <activity android:name=".inside_ntes_actvitites.PnActivity" />
-
         <activity android:name=".trainee_activities.TraineePortalCirculars" />
         <activity android:name=".admin_activities.UploadActivity" />
         <activity android:name=".admin_activities.ViewUploadsActivity" />
+        <activity android:name=".admin_activities.AdminRetrieval" />
+        <activity android:name=".trainee_activities.TraineePortalRegister"></activity>
     </application>
 
 </manifest>

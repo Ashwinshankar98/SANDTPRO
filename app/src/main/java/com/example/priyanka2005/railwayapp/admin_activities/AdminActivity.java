@@ -68,22 +68,7 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         switch (view.getId()){
             case R.id.secdbCardView:
-               // startActivity( new Intent( getApplicationContext(),AdminRetrieval.class ) );
-                String url = "https://southernrailwayapp.firebaseapp.com/";
-                try {
-                    Intent i = new Intent("android.intent.action.MAIN");
-                    i.setComponent( ComponentName.unflattenFromString("com.android.chrome/com.android.chrome.Main"));
-                    i.addCategory("android.intent.category.LAUNCHER");
-                    i.setData( Uri.parse(url));
-                    startActivity(i);
-                }
-                catch(ActivityNotFoundException e) {
-                    // Chrome is not installed
-                    Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                    startActivity(i);
-                }
-
-
+                startActivity( new Intent( getApplicationContext(),AdminRetrieval.class ) );
                 break;
             case R.id.uploadCardView:
                 startActivity( new Intent( getApplicationContext(),UploadActivity.class ) );

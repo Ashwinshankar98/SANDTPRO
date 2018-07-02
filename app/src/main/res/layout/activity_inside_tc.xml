@@ -15,7 +15,7 @@
         app:layout_collapseMode="pin"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Training Center"
+        app:title="Training center"
         app:titleTextColor="@android:color/white" />
 
     <FrameLayout
