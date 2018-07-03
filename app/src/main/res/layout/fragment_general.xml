@@ -36,7 +36,8 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/dash1"
+                    android:src="@drawable/rules"
+                    android:layout_gravity="center"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -67,7 +68,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundblue"
-                    android:src="@drawable/dash2"
+                    android:src="@drawable/earthing"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,7 +110,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundorange"
-                    android:src="@drawable/dash3"
+                    android:src="@drawable/rules"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -140,7 +141,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundgreen"
-                    android:src="@drawable/dash4"
+                    android:src="@drawable/budget"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -182,7 +183,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/wp"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -212,7 +213,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/wca"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -257,7 +258,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/promotion"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -288,7 +289,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/pension"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -333,7 +334,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/insrel"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -363,7 +364,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/setup"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -408,7 +409,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundorange"
-                    android:src="@drawable/dash3"
+                    android:src="@drawable/staff"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -439,7 +440,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundgreen"
-                    android:src="@drawable/dash4"
+                    android:src="@drawable/wca"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -481,7 +482,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/rules"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -511,7 +512,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/rules"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -556,7 +557,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/wca"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -586,7 +587,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/rules"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -632,7 +633,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
+                    android:src="@drawable/stores"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -662,7 +663,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/dash6"
+                    android:src="@drawable/ministry"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
