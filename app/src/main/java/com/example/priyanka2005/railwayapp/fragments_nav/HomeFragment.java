@@ -15,7 +15,7 @@ import com.example.priyanka2005.railwayapp.inside_activities.InsideHome;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    private CardView principalcste,divisons,stdf,stnl,workshop,cons;
+    private CardView principalcste,divisons,facebook,twitter;
 
 
     public HomeFragment() {
@@ -31,17 +31,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         principalcste = (CardView)view.findViewById( R.id.principalcsteCardView );
         divisons = (CardView)view.findViewById( R.id.divisonsCardView );
-        stdf = (CardView)view.findViewById( R.id.stdfCardView );
-        stnl = (CardView)view.findViewById( R.id.stnlCardView );
-        workshop = (CardView)view.findViewById( R.id.workshopCardView );
-        cons = (CardView)view.findViewById( R.id.consCardView );
+        facebook = (CardView)view.findViewById( R.id.facebookCardview );
+        twitter = (CardView)view.findViewById( R.id.twitterCardview );
 
         principalcste.setOnClickListener( this );
         divisons.setOnClickListener( this );
-        stdf.setOnClickListener( this );
-        stnl.setOnClickListener( this );
-        workshop.setOnClickListener( this );
-        cons.setOnClickListener( this );
+        facebook.setOnClickListener( this );
+        twitter.setOnClickListener( this );
+
 
 
         return view;
@@ -58,18 +55,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.divisonsCardView :
                 startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","infra" ));
                 break;
-            case R.id.stdfCardView:
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","faculty" ) );
+            case R.id.facebookCardview:
+                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","facebook" ) );
                 break;
-            case R.id.stnlCardView :
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","courses" ) );
+            case R.id.twitterCardview :
+                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","twitter" ) );
                 break;
-            case R.id.workshopCardView:
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","history" ) );
-                break;
-            case R.id.consCardView :
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","aboutus" ) );
-                break;
+
         }
 
 

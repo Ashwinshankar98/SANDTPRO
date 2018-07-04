@@ -4,24 +4,25 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_ntes"
-            android:icon="@drawable/ntesicon"
-            android:title="Click NTES"/>
+
         <item android:id="@+id/nav_home"
             android:icon="@drawable/homeicon"
             android:title="Home"/>
+        <item android:id="@+id/nav_ntes"
+            android:icon="@drawable/ntesicon"
+            android:title="Click NTES"/>
         <item android:id="@+id/nav_signal"
-            android:icon="@drawable/nav2"
+            android:icon="@drawable/navsignal"
             android:title="Signal"/>
         <item android:id="@+id/nav_telecom"
-            android:icon="@drawable/nav3"
+            android:icon="@drawable/navtele"
             android:title="Telecom"/>
         <item android:id="@+id/nav_general"
             android:icon="@drawable/nav5"
             android:title="General"/>
         <item android:id="@+id/nav_tc"
-            android:icon="@drawable/nav4"
-            android:title="Training Center-PTJ"/>
+            android:icon="@drawable/navtc"
+            android:title="Training Center"/>
 
     </group>
 

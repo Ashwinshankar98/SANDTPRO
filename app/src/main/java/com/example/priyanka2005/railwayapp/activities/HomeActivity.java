@@ -1,6 +1,8 @@
 package com.example.priyanka2005.railwayapp.activities;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
@@ -100,17 +102,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new GeneralFragment()).commit();
                 break;
             case R.id.nav_about:
-                Toast.makeText(this, "About Us", Toast.LENGTH_SHORT).show();
+                startActivity( new Intent( getApplicationContext(),AboutusActivity.class ) );
                 break;
             case R.id.nav_send:
-//                Intent shareIntent =new Intent(android.content.Intent.ACTION_SEND);
-////                shareIntent.setType("*/*");
-////                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-////                Uri uri =Uri.parse("/data/apps/"+getApplicationContext().getPackageName()+".apk");
-////                shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
-////                startActivity(Intent.createChooser(shareIntent,"Share via"));
-////                break;
-                break;
+                Intent shareIntent =new Intent(android.content.Intent.ACTION_SEND);
+                shareIntent.setType("*/*");
+                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                Uri uri =Uri.parse("/data/apps/"+getApplicationContext().getPackageName()+".apk");
+                shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+                startActivity(Intent.createChooser(shareIntent,"Share via"));
+               break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
 

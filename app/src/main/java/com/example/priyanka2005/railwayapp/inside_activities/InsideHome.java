@@ -5,18 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.priyanka2005.railwayapp.R;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.ConsFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.PrincipalcsteFragment;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.WorkshopFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.divisonFragment;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.stdfFragment;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.stnlFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.AboutusFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.CoursesFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.FacultyFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.HistoryFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.InfraFragment;
-import com.example.priyanka2005.railwayapp.inside_tc_fragments.PrincipalFragment;
+import com.example.priyanka2005.railwayapp.inside_home_fragments.FacebookFragment;
+import com.example.priyanka2005.railwayapp.inside_home_fragments.TwitterFragment;
 
 public class InsideHome extends AppCompatActivity {
 
@@ -38,18 +30,13 @@ public class InsideHome extends AppCompatActivity {
             case "divison":
                 getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new divisonFragment()).commit();
                 break;
-            case "stdf":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new stdfFragment()).commit();
+            case "facebook":
+                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new FacebookFragment()).commit();
                 break;
-            case "stnl":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new stnlFragment()).commit();
+            case "twitter":
+                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new TwitterFragment()).commit();
                 break;
-            case "workshop":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new WorkshopFragment()).commit();
-                break;
-            case "cons":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new ConsFragment()).commit();
-                break;
+
         }
     }
 }

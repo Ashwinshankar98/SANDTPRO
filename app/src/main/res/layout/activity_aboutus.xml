@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutusActivity">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/aboutuspgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/aboutus"
+        app:layout_constraintEnd_toStartOf="@+id/aboutus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/aboutus"
+        app:layout_constraintTop_toBottomOf="@+id/aboutus" />
+
+</android.support.constraint.ConstraintLayout>

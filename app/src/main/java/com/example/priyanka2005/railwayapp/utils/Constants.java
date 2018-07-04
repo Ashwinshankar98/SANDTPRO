@@ -5,6 +5,7 @@ public class Constants {
     public static final String STORAGE_PATH_UPLOADS = "uploads/";
     public static final String DATABASE_PATH_UPLOADS = "uploads";
 
+    public String url_aboutus = "https://firebasestorage.googleapis.com/v0/b/southernrailwayapp.appspot.com/o/aboutus.pdf?alt=media&token=3b61b458-bcca-40c7-998d-e9fec4b8f93b";
     public String url_gen_hoer1 = "https://firebasestorage.googleapis.com/v0/b/southernrailwayapp.appspot.com/o/gen_hoer.pdf?alt=media&token=f55675cf-ab42-42d5-bd8b-890ea1f26147";
     public String url_gen_cr1 = "https://firebasestorage.googleapis.com/v0/b/southernrailwayapp.appspot.com/o/gen_cr1.pdf?alt=media&token=8a9fc6f8-53d4-4a08-9db7-7811f12a7ad4";
     public String url_gen_dar1="https://firebasestorage.googleapis.com/v0/b/southernrailwayapp.appspot.com/o/gen_dar1.pdf?alt=media&token=24f07c03-cd37-4acc-ab9a-893ea0545a02";

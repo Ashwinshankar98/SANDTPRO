@@ -36,7 +36,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/dash1"
+                    android:src="@drawable/principalcste"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundblue"
-                    android:src="@drawable/dash2"
+                    android:src="@drawable/divisions"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="160dp"
-            android:id="@+id/stdfCardView"
+            android:id="@+id/facebookCardview"
             android:layout_height="190dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
@@ -131,14 +131,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundorange"
-                    android:src="@drawable/dash3"
+                    android:src="@drawable/facebook"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="S/T Designers forum"/>
+                    android:text="Facebook"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -148,7 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Design and Discuss"
+                    android:text="Facebook page"
                     android:padding="5dp"
                     android:textColor="@color/darkerGrey"/>
 
@@ -158,7 +158,7 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="160dp"
-            android:id="@+id/stnlCardView"
+            android:id="@+id/twitterCardview"
             android:layout_height="190dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
@@ -176,14 +176,14 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/circlebackgroundpink"
-                android:src="@drawable/dash6"
+                android:src="@drawable/twitter"
                 android:padding="10dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:text="S/T Newsletter"/>
+                android:text="Twitter"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -193,7 +193,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Updates and Circulars"
+                android:text="Latest Twitter news"
                 android:padding="5dp"
                 android:textColor="@color/darkerGrey"/>
 
@@ -202,107 +202,5 @@
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:clipToPadding="false">
-
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="160dp"
-        android:id="@+id/workshopCardView"
-        android:layout_height="190dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:layout_margin="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="@drawable/circlebackgroundgreen"
-                android:src="@drawable/dash4"
-                android:padding="10dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Workshop"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/lightGrayLine"
-                android:layout_margin="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Workshop at a glance"
-                android:padding="5dp"
-                android:textColor="@color/darkerGrey"/>
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView
-            android:layout_width="160dp"
-            android:id="@+id/consCardView"
-            android:layout_height="190dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_margin="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundyellow"
-                    android:src="@drawable/dash5"
-                    android:padding="10dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Constructions"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightGrayLine"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="ST Construction at a glance"
-                    android:padding="5dp"
-                    android:textColor="@color/darkerGrey"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-
-
-    </LinearLayout>
-
-
 
 </LinearLayout>
