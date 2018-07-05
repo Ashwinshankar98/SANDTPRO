@@ -35,7 +35,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundred"
-                    android:src="@drawable/dash7"
+                    android:src="@drawable/tracktrain"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundblue"
-                    android:src="@drawable/nav1"
+                    android:src="@drawable/betweenstation"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,7 +175,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/dash1"
+                    android:src="@drawable/seatavail"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -229,7 +229,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundblue"
-                    android:src="@drawable/dash2"
+                    android:src="@drawable/schedule"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -273,14 +273,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpurple"
-                    android:src="@drawable/dash1"
+                    android:src="@drawable/fareenq"
                     android:padding="10dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Fair Enquiry"/>
+                    android:text="Fare Enquiry"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

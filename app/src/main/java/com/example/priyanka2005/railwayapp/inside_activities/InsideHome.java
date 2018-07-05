@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.priyanka2005.railwayapp.R;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.PrincipalcsteFragment;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.divisonFragment;
+import com.example.priyanka2005.railwayapp.inside_home_fragments.divisionFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.FacebookFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.TwitterFragment;
 
@@ -24,11 +24,11 @@ public class InsideHome extends AppCompatActivity {
 
         switch(data) {
 
-            case "principalcste":
+            case "principal":
                 getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new PrincipalcsteFragment()).commit();
                 break;
-            case "divison":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new divisonFragment()).commit();
+            case "division":
+                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new divisionFragment()).commit();
                 break;
             case "facebook":
                 getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new FacebookFragment()).commit();

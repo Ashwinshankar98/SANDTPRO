@@ -63,7 +63,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:id="@+id/divisonsCardView"
+            android:id="@+id/divisionsCardView"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_margin="10dp">

@@ -24,9 +24,11 @@
         </activity>
         <activity
             android:name=".activities.HomeActivity"
+            android:hardwareAccelerated="true"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name=".activities.LoginActivity"
+            android:hardwareAccelerated="true"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name=".inside_activities.InsideHome"
@@ -100,7 +102,9 @@
         <activity
             android:name=".trainee_activities.TraineePortalRegister"
             android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity android:name=".activities.AboutusActivity"></activity>
+        <activity android:name=".activities.AboutusActivity"
+            android:hardwareAccelerated="true"/>
+        <activity android:name=".activities.IndianRailwaysActivity"/>
     </application>
 
 </manifest>

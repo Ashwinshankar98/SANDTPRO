@@ -15,7 +15,7 @@ import com.example.priyanka2005.railwayapp.inside_activities.InsideHome;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    private CardView principalcste,divisons,facebook,twitter;
+    private CardView principalcste,divisions,facebook,twitter;
 
 
     public HomeFragment() {
@@ -30,12 +30,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
         principalcste = (CardView)view.findViewById( R.id.principalcsteCardView );
-        divisons = (CardView)view.findViewById( R.id.divisonsCardView );
+        divisions = (CardView)view.findViewById( R.id.divisionsCardView );
         facebook = (CardView)view.findViewById( R.id.facebookCardview );
         twitter = (CardView)view.findViewById( R.id.twitterCardview );
 
         principalcste.setOnClickListener( this );
-        divisons.setOnClickListener( this );
+        divisions.setOnClickListener( this );
         facebook.setOnClickListener( this );
         twitter.setOnClickListener( this );
 
@@ -52,8 +52,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.principalcsteCardView:
                 startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","principal" ) );
                 break;
-            case R.id.divisonsCardView :
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","infra" ));
+            case R.id.divisionsCardView :
+                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","division" ));
                 break;
             case R.id.facebookCardview:
                 startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","facebook" ) );

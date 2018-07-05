@@ -21,7 +21,7 @@ public class Aftc1 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.signal_aftc_1,container,false );
         String url="https://enquiry.indianrail.gov.in/xyzabc/e_trainsBwStns.jsp";
-        webView= view.findViewById(R.id.webview1);
+        webView= view.findViewById(R.id.webview6);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(url);
         return view;
