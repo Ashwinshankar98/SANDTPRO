@@ -8,7 +8,6 @@ import com.example.priyanka2005.railwayapp.R;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.PrincipalcsteFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.divisionFragment;
 import com.example.priyanka2005.railwayapp.inside_home_fragments.FacebookFragment;
-import com.example.priyanka2005.railwayapp.inside_home_fragments.TwitterFragment;
 
 public class InsideHome extends AppCompatActivity {
 
@@ -32,9 +31,6 @@ public class InsideHome extends AppCompatActivity {
                 break;
             case "facebook":
                 getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new FacebookFragment()).commit();
-                break;
-            case "twitter":
-                getSupportFragmentManager().beginTransaction().replace( R.id.inside_fragment_container, new TwitterFragment()).commit();
                 break;
 
         }

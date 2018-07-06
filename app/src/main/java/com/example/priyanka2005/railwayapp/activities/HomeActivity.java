@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -31,12 +32,14 @@ import com.example.priyanka2005.railwayapp.fragments_nav.SignalFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TcFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TelecomFragment;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
 
-   private ImageView icon;
-
+    private ImageView icon;
+    private Fragment mFragmentToSet = null;
     private DrawerLayout drawerLayout;
     private CollapsingToolbarLayout collapsingToolbarLayout;
 
@@ -63,10 +66,41 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         View header = navigationView.getHeaderView(0);
         icon = (ImageView)header.findViewById( R.id.iconImageview );
         icon.setOnClickListener( this );
+
+        drawerLayout.addDrawerListener( new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+
+
+
+                if(mFragmentToSet != null){
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace( R.id.fragment_container,mFragmentToSet )
+                            .commit();
+                    mFragmentToSet = null;
+                }
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        } );
         if(savedInstanceState==null){
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
-        navigationView.setCheckedItem(R.id.nav_home);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_home);
         }
 
 
@@ -87,45 +121,52 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull final MenuItem item) {
 
-                switch (item.getItemId()) {
+        switch (item.getItemId()) {
 
-                    case R.id.nav_home:
-                        collapsingToolbarLayout.setTitle( "Home" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new HomeFragment() ).commit();
-                        break;
+            case R.id.nav_home:
+                collapsingToolbarLayout.setTitle( "Home" );
+                //getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new HomeFragment() ).commit();
+                mFragmentToSet = new HomeFragment();
+                break;
 
-                    case R.id.nav_signal:
-                        collapsingToolbarLayout.setTitle( "Signal" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new SignalFragment() ).commit();
-                        break;
-                    case R.id.nav_telecom:
-                        collapsingToolbarLayout.setTitle( "Telecommunication" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new TelecomFragment() ).commit();
-                        break;
-                    case R.id.nav_ntes:
-                        collapsingToolbarLayout.setTitle( "Train Enquiry" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new NtesFragment() ).commit();
-                        break;
-                    case R.id.nav_tc:
-                        collapsingToolbarLayout.setTitle( "Training Center" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new TcFragment() ).commit();
-                        break;
-                    case R.id.nav_general:
-                        collapsingToolbarLayout.setTitle( "General" );
-                        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new GeneralFragment() ).commit();
-                        break;
-                    case R.id.nav_about:
-                        startActivity( new Intent( getApplicationContext(), AboutusActivity.class ) );
-                        break;
-                    case R.id.nav_send:
-                        Intent shareIntent = new Intent( android.content.Intent.ACTION_SEND );
-                        shareIntent.setType( "*/*" );
-                        shareIntent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET );
-                        Uri uri = Uri.parse( "/data/apps/" + getApplicationContext().getPackageName() + ".apk" );
-                        shareIntent.putExtra( Intent.EXTRA_STREAM, uri );
-                        startActivity( Intent.createChooser( shareIntent, "Share via" ) );
-                        break;
-                }
+            case R.id.nav_signal:
+                collapsingToolbarLayout.setTitle( "Signal" );
+                //getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new SignalFragment() ).commit();
+                mFragmentToSet = new SignalFragment();
+                break;
+            case R.id.nav_telecom:
+                collapsingToolbarLayout.setTitle( "Telecommunication" );
+                //getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new TelecomFragment() ).commit();
+                mFragmentToSet = new TelecomFragment();
+                break;
+            case R.id.nav_ntes:
+                collapsingToolbarLayout.setTitle( "Train Enquiry" );
+                // getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new NtesFragment() ).commit();
+                mFragmentToSet = new NtesFragment();
+                break;
+            case R.id.nav_tc:
+                collapsingToolbarLayout.setTitle( "Training Center" );
+                //getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new TcFragment() ).commit();
+                mFragmentToSet = new TcFragment();
+                break;
+            case R.id.nav_general:
+                collapsingToolbarLayout.setTitle( "General" );
+                //getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container, new GeneralFragment() ).commit();
+                mFragmentToSet = new GeneralFragment();
+                break;
+            case R.id.nav_about:
+                startActivity( new Intent( getApplicationContext(), AboutusActivity.class ) );
+                break;
+            case R.id.nav_send:
+                Intent shareIntent = new Intent( android.content.Intent.ACTION_SEND );
+                shareIntent.setType( "*/*" );
+                shareIntent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET );
+                Uri uri = Uri.parse( "/data/apps/" + getApplicationContext().getPackageName() + ".apk" );
+                shareIntent.putExtra( Intent.EXTRA_STREAM, uri );
+                startActivity( Intent.createChooser( shareIntent, "Share via" ) );
+                break;
+        }
+
 
      drawerLayout.closeDrawer(GravityCompat.START);
      return true;

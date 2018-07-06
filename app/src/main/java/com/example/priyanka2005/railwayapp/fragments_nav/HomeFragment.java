@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.priyanka2005.railwayapp.R;
+import com.example.priyanka2005.railwayapp.TwitterActivity;
 import com.example.priyanka2005.railwayapp.inside_activities.InsideHome;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
@@ -59,7 +60,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","facebook" ) );
                 break;
             case R.id.twitterCardview :
-                startActivity( new Intent( getContext(), InsideHome.class ).putExtra( "reference","twitter" ) );
+                startActivity( new Intent( getContext(), TwitterActivity.class ) );
                 break;
 
         }
