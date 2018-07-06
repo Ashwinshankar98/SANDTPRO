@@ -5,8 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
 
     <application
         android:allowBackup="true"
@@ -132,7 +133,8 @@
         <activity
             android:name=".activities.IndianRailwaysActivity"
             android:hardwareAccelerated="true" />
-        <activity android:name=".TwitterActivity"></activity>
+        <activity android:name=".TwitterActivity"/>
+        <receiver android:name=".activities.Notification_reciever"/>
     </application>
 
 </manifest>

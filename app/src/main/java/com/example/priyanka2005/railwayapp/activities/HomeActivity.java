@@ -1,6 +1,8 @@
 package com.example.priyanka2005.railwayapp.activities;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.net.Uri;
 
@@ -32,6 +34,7 @@ import com.example.priyanka2005.railwayapp.fragments_nav.SignalFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TcFragment;
 import com.example.priyanka2005.railwayapp.fragments_nav.TelecomFragment;
 
+import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 
@@ -102,6 +105,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
+
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.set( Calendar.HOUR_OF_DAY,21 );
+        calendar.set( Calendar.MINUTE,30);
+        calendar.set( Calendar.SECOND,0);
+        Intent intent = new Intent( getApplicationContext(),Notification_reciever.class );
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),100,intent,PendingIntent.FLAG_UPDATE_CURRENT  );
+        AlarmManager alarmManager = (AlarmManager)getSystemService( ALARM_SERVICE );
+        alarmManager.setRepeating( AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pendingIntent );
+
 
 
     }
